@@ -8,11 +8,11 @@ type: middleware
 import: github.com/jlfxt/traefik-plugin
 
 # A brief description of what your plugin is doing.
-summary: Logging requests to stdout
+summary: Logs requests to stdout
 
 # Medias associated to the plugin (optional)
-iconPath: foo/icon.png
-bannerPath: foo/banner.png
+#iconPath: foo/icon.png
+#bannerPath: foo/banner.png
 
 # Configuration data for your plugin.
 # This is mandatory,

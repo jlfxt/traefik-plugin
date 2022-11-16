@@ -1,4 +1,4 @@
-package plugin_test
+package traefik_plugin_test
 
 import (
 	"context"

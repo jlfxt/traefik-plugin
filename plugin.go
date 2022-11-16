@@ -10,12 +10,12 @@ import (
 )
 
 type KafkaConfig struct {
-	BootstrapUrl string `json:"bootstrapUrl,omitempty"`
+	BootstrapUrl string `json:"bootstrapUrl,omitempty" yaml:"bootstrapUrl,omitempty"`
 }
 
 // Config the plugin configuration.
 type Config struct {
-	Kafka KafkaConfig `json:"kafka,omitempty"`
+	Kafka KafkaConfig `json:"kafka,omitempty" yaml:"kafka,omitempty"`
 }
 
 // CreateConfig creates the default plugin configuration.
@@ -37,7 +37,7 @@ type RequestLogger struct {
 // New created a new Demo plugin.
 func New(ctx context.Context, next http.Handler, config *Config, name string) (http.Handler, error) {
 	if len(config.Kafka.BootstrapUrl) == 0 {
-		return nil, fmt.Errorf("must provide a boostrapUrl")
+		return nil, fmt.Errorf("must provide a bootstrapUrl")
 	}
 
 	return &RequestLogger{

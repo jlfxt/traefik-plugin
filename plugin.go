@@ -191,7 +191,7 @@ func newRequestLogProducer(kc KafkaConfig) sarama.SyncProducer {
 		config.Net.TLS.Config = tlsConfig
 	}
 	config.Producer.RequiredAcks = sarama.WaitForLocal // Only wait for the leader to ack
-	//config.Producer.Return.Successes = true
+	config.Producer.Return.Successes = true
 	config.Producer.Compression = sarama.CompressionSnappy   // Compress messages
 	config.Producer.Flush.Frequency = 500 * time.Millisecond // Flush batches every 500ms
 

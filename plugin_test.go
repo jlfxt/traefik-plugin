@@ -11,7 +11,10 @@ import (
 
 func TestPlugin(t *testing.T) {
 	cfg := plugin.CreateConfig()
-	cfg.Kafka.BootstrapUrl = "foo.example.local"
+	cfg.Kafka.BootstrapUrl = "localhost:9092"
+	cfg.Kafka.Tls.CaFile = "./sslcerts/cacerts.pem"
+	cfg.Kafka.Tls.CertFile = "./sslcerts/fullchain.pem"
+	cfg.Kafka.Tls.KeyFile = "./sslcerts/privkey.pem"
 
 	ctx := context.Background()
 	next := http.HandlerFunc(func(rw http.ResponseWriter, req *http.Request) {})

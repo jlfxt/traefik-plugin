@@ -1,4 +1,4 @@
-# github.com/Shopify/sarama v1.37.2
+# github.com/Shopify/sarama v1.37.2 => github.com/jlfxt/sarama v1.37.2
 ## explicit; go 1.17
 github.com/Shopify/sarama
 # github.com/davecgh/go-spew v1.1.1
@@ -80,13 +80,6 @@ github.com/klauspost/compress/internal/cpuinfo
 github.com/klauspost/compress/internal/snapref
 github.com/klauspost/compress/zstd
 github.com/klauspost/compress/zstd/internal/xxhash
-# github.com/pierrec/lz4/v4 v4.1.17
-## explicit; go 1.14
-github.com/pierrec/lz4/v4
-github.com/pierrec/lz4/v4/internal/lz4block
-github.com/pierrec/lz4/v4/internal/lz4errors
-github.com/pierrec/lz4/v4/internal/lz4stream
-github.com/pierrec/lz4/v4/internal/xxh32
 # github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475
 ## explicit
 github.com/rcrowley/go-metrics
@@ -99,3 +92,4 @@ golang.org/x/crypto/pbkdf2
 golang.org/x/net/http2/hpack
 golang.org/x/net/internal/socks
 golang.org/x/net/proxy
+# github.com/Shopify/sarama => github.com/jlfxt/sarama v1.37.2
